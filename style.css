@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+}
+
+.container {
+  display: inline;
+  max-width: 300px;
+  height: 620px;
+  margin: 7% auto;
+  background-color: white;
+  position: relative;
+  border-radius: 35px;
+}
+
+.curved-border {
+  width: 300px;
+  height: 170px;
+  background-color: rgb(214, 164, 214);
+  overflow: hidden;
+  border-radius: 50px 50px 0 0;
+}
+
+.curved-border::before {
+  content: "";
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 25px;
+  background-color: white;
+  border-radius: 0 0 40% 40%;
+}
+
+.curved-border::after {
+  content: "";
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 10px;
+  background-color: rgb(214, 164, 214);
+  border-radius: 15% 15% 40% 40%;
+}
+
+.card-number {
+  margin-top: 25px;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+  padding: 10px 0;
+}
+
+.card {
+  background-color: rgb(183, 222, 249);
+  margin: 10px 10px 20px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  transition: box-shadow 0.4s ease;
+}
+
+.card:hover {
+  box-shadow: 5px 6px 0px 2px rgb(191, 239, 255);
+}
+
+.icon {
+  font-size: 50px;
+}
+
+/* top */
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+  padding: 0 14px;
+}
+
+.top p {
+  padding-top: 17px;
+}
+
+.icons {
+  margin-top: 7px;
+  font-size: 30px;
+}
+
+.icons i {
+  cursor: pointer;
+}
+
+.incon-plus {
+  background-color: rgb(232, 232, 232);
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 25px;
+}
+
+.img-01 {
+  width: 60px;
+  height: 70px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.names {
+  display: flex;
+  justify-content: space-around;
+  vertical-align: middle;
+  padding: 0 10px;
+}
+
+.pictures {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  vertical-align: middle;
+  padding: 0 10px;
+}
+
+.incon-plus-2 {
+  border: solid 3px black;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 15px;
+  padding: 15px;
+  height: 50px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, color 0.4s ease;
+  cursor: pointer;
+}
+
+.incon-plus-2:hover {
+  background-color: black;
+  color: rgb(214, 164, 214);
+}
+
+/* bottom*/
+
+.bottom {
+  width: 300px;
+  height: 250px;
+  background-color: rgb(36, 0, 36);
+  color: white;
+  display: flex;
+  padding: 0 14px;
+  justify-content: space-around;
+  border-radius: 30px;
+  position: absolute;
+  bottom: 0;
+}
+
+.balance-info {
+  border: solid 2px white;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 30px;
+  border-radius: 10px;
+  width: 100px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.outcome {
+  padding: 10px;
+  width: 90px;
+  color: black;
+  background-color: rgb(183, 222, 249);
+  height: 80px;
+  border-radius: 22px;
+  margin-top: 30px;
+}
+
+.income {
+  padding: 10px;
+  width: 90px;
+  color: black;
+  background-color: rgb(218, 194, 218);
+  height: 80px;
+  border-radius: 22px;
+  margin-top: 30px;
+}
